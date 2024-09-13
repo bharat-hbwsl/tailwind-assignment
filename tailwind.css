@@ -592,7 +592,7 @@ video {
   width: 46.9375rem;
   align-items: flex-start;
   border-color: transparent;
-  padding: 0.75rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .navbar__search__icon__div{
@@ -602,14 +602,14 @@ video {
   border-color: transparent;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 0.625rem;
+  padding: 0.72rem 1.5rem;
 }
 
 #navbar__search__icon{
   display: inline-flex;
   align-items: flex-start;
   gap: 0.5rem;
-  fill: #FFF;
+  fill: #fff;
 }
 
 .navbar__menu__div{
@@ -622,13 +622,17 @@ video {
 .navbar__menu__title{
   margin-top: 0.25rem;
   height: 2rem;
+  width: 4.75rem;
   text-align: center;
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  width: 4.75rem;
+}
+
+.card__section__card{
+  position: relative;
 }
 
 .navbar__lower{
@@ -637,7 +641,7 @@ video {
   justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(8 32 50 / var(--tw-bg-opacity));
-  padding: 1.25rem;
+  padding: 1.25rem 6rem;
 }
 
 .two__item{
@@ -648,38 +652,37 @@ video {
   justify-content: center;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(212 212 216 / var(--tw-border-opacity));
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 1.25rem;
+  padding: 1.25rem 1.5rem 2.125rem 1.5rem;
 }
 
 .category{
-  height: 8rem;
-  width: 8rem;
+  height: 8.125rem;
+  width: 8.125rem;
   flex-shrink: 0;
 }
 
 .two__item__title{
   margin-top: 1rem;
   text-align: center;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(39 39 42 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 #two{
   margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(13.75rem,1fr));
   gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
 }
 
 #main__section{
-  padding: 1.25rem;
+  padding: 1.25rem 6rem;
 }
 
 #footer{
@@ -689,7 +692,7 @@ video {
   flex-direction: column;
   flex-wrap: wrap;
   --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .footer__upper{
@@ -699,21 +702,19 @@ video {
 }
 
 .footer__upper__title{
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(63 63 70 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .footer__list__item{
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(82 82 91 / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .footer__list{
@@ -730,12 +731,11 @@ video {
 }
 
 .footer__list__number{
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(82 82 91 / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 ul > li{
@@ -753,33 +753,30 @@ ul > li{
   top: 0.5rem;
   padding: 2rem;
   text-align: center;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1rem;
   --tw-text-opacity: 1;
-  color: rgb(113 113 122 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 hr{
-  margin-left: auto;
-  margin-right: auto;
-  height: 0.125rem;
+  margin: auto;
+  height: 0.0625rem;
   width: 90%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+  background: #e4e4e7;
+  border-width:1px;
+  border-style: inset;
 }
 
 .footer__subscribe{
-  margin-top: 1.5rem;
+  margin-top: 1.62rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(25 97 149 / var(--tw-bg-opacity));
-  padding: 0.75rem;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 0.75rem 1.25rem;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.25rem;
@@ -792,12 +789,12 @@ hr{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem;
+  padding: 1.25rem 6rem;
 }
 
-.navbar__lower__p{
+.navbar__lower__p {
+  font-family: Inter;
   margin-left: 0.5rem;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -805,11 +802,7 @@ hr{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.navbar__lower__one{
-  display: flex;
-}
-
-.navbar__lower__two{
+.navbar__lower__one, .navbar__lower__two{
   display: flex;
 }
 
@@ -821,10 +814,10 @@ hr{
   align-items: center;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(127 199 251 / var(--tw-border-opacity));
+  border-color: rgb(147 197 253 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 0.875rem;
+  padding: 0.75rem 11.1875rem 0.75rem 1rem;
 }
 
 #one{
@@ -839,17 +832,22 @@ hr{
 }
 
 .one__title{
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
-  color: rgb(39 39 42 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.one__view{
+#hamburger{
+  display: none;
+}
+
+.one__view {
+  font-family: Inter;
+  font-size:large;
+  font-style: normal;
   margin-right: 0.5rem;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
@@ -859,100 +857,61 @@ hr{
 .main__one{
   display: flex;
   justify-content: space-between;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding: 0.875rem 6rem;
 }
 
-.main__item__img{
+.main__item__img, .main__item__heading, .main__item__p, .main__item__arrow, .main__item__view{
   position: relative;
-}
-
-#hamburger{
-  display: none;
+  top: -8.25rem;
+  margin-left: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .main__item__heading{
-  position: relative;
-  top: -8.25rem;
-  margin-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.75rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.main__item__p{
-  position: relative;
-  top: -8.25rem;
-  margin-left: 1rem;
+.main__item__p, .main__item__arrow, .main__item__view{
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.main__item__arrow{
-  position: relative;
-  top: -8.25rem;
-  margin-left: 1rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.main__item__view{
-  position: relative;
-  top: -6rem;
-  margin-left: 1rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .card__section{
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding: 0.875rem 6rem;
 }
 
 .image{
-  height: 16rem;
+  height: 15.5625rem;
   width: 31rem;
 }
 
-.card__section__card{
-  position: relative;
-}
-
-.heading{
+.heading {
+  font-family: Inter;
   position: absolute;
-  top: 8rem;
+  top: 8.25rem;
   padding-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text{
+.text {
+  font-family: Inter;
   position: absolute;
-  top: 10rem;
+  top: 10.25rem;
   width: 60%;
   padding-left: 1rem;
   font-size: 0.875rem;
+  font-weight: 400;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -970,36 +929,30 @@ hr{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
   #navbar__upper{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1.25rem;
   }
 
   #footer{
     display: block;
-    height: 14rem;
+    height: 22.5rem;
   }
 
   .footer__upper{
     display: block;
     flex-wrap: wrap;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   .footer__section{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
     margin-top: 1rem;
   }
 
   .footer__input{
     width: 70vw;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
   }
 
   .navbar__search__div{
@@ -1008,13 +961,7 @@ hr{
   }
 
   .navbar__menu__div{
-    margin-left: 1rem;
-    margin-right: 1rem;
     margin-left: 0px;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
   }
 
   #navbar__search{
@@ -1044,14 +991,22 @@ hr{
     justify-content: center;
   }
 
+  .navbar__menu__div{
+    margin: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .navbar__menu__title{
-    margin-left: 0.5rem;
+    margin-left: 10px;
   }
 
   .navbar__lower{
     display: block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   #hamburger{
@@ -1068,8 +1023,7 @@ hr{
   }
 
   #main__section{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   #two{
@@ -1080,8 +1034,7 @@ hr{
   .navbar__lower{
     display: block;
     height: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   #footer{
@@ -1090,13 +1043,12 @@ hr{
   }
 
   .one__title{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 0.8rem;
   }
 
-  .one__view{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .one__view {
+    font-family: Inter;
+    font-size: 0.8rem;
   }
 
   .navbar__lower__one{
@@ -1118,15 +1070,15 @@ hr{
   }
 
   .navbar__lower__p{
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 0.7rem;
   }
 
   .navbar__list__contact{
     margin: 0px;
   }
 
-  .one__view{
+  .one__view {
+    font-family: Inter;
     margin: 0px;
   }
 
@@ -1134,33 +1086,49 @@ hr{
     padding: 0px;
   }
 
+  .card__section__card{
+    margin-bottom: 3px;
+  }
+
   .card__section{
     display: block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   .image{
     width: 85vw;
   }
 
-  .heading{
+  .heading {
+    font-family: Inter;
     font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .text{
     width: 60vw;
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 0.65rem;
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   #hamburger{
     display: flex;
-    height: 2rem;
     width: 2rem;
+    height: 2rem;
+  }
+
+  .navbar__search__div{
+    display: flex;
+    width: 100%;
+  }
+
+  #navbar__search{
+    @apply: flex-grow md:w-3/4 lg:w-1/2
+    
+  }
+
+  .navbar__search__icon__div{
+    flex:none;
   }
 
   .navbar__upper__menubar{
@@ -1169,7 +1137,7 @@ hr{
     justify-content: space-between;
   }
 
-  .navbar__search__div{
+  .navbar__search__div {
     margin-top: 1rem;
   }
 
@@ -1178,22 +1146,19 @@ hr{
     height: auto;
   }
 
-  .footer__upper{
+  .footer__upper {
+    padding: 2rem;
     flex-wrap: wrap;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
-  .footer__section{
-    margin-left: 1rem;
-    margin-right: 1rem;
+  .footer__section {
     margin-top: 1rem;
+    margin: 1rem;
   }
 
-  #navbar__upper{
+  #navbar__upper {
+    padding: 2rem;
     margin: 0px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .navbar__search__div{
@@ -1202,21 +1167,20 @@ hr{
 
   #navbar__menu{
     position: relative;
+    width: 100vw;
+    height: 40vh;
     display: flex;
     display: none;
-    height: 40vh;
-    width: 100vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .navbar__lower{
+  .navbar__lower {
+    padding: 2rem;
     display: block;
     height: -moz-fit-content;
     height: fit-content;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .navbar__lower__one{
@@ -1233,45 +1197,39 @@ hr{
     margin: 0px;
   }
 
-  .navbar__menu__div{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .navbar__menu__div {
+    margin: 15px 0;
   }
 
-  .navbar__lower__p{
+  .navbar__lower__p {
     font-size: 1rem;
-    line-height: 1.5rem;
   }
 
-  .card__section{
+  .card__section {
+    padding: 2rem;
+    gap:5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
-  #main__section{
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+  #main__section {
+    padding: 1.25rem 3.5rem;
   }
 
   .image{
     width: 85vw;
   }
 
-  .heading{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .heading {
+    font-family: Inter;
+    font-size: 1.3rem;
   }
 
-  .text{
+  .text {
+    font-size: 0.8rem;
     width: 60vw;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   #two{
@@ -1285,29 +1243,41 @@ hr{
     height: auto;
   }
 
-  .footer__upper{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .navbar__search__div{
+    display: flex;
+    width: 100%;
   }
 
-  .footer__section{
-    margin-left: 2rem;
-    margin-right: 2rem;
+  #navbar__search{
+    @apply: flex-grow md:w-3/4 lg:w-1/2
+    
+  }
+
+  .navbar__search__icon__div{
+    flex:none;
+  }
+
+  .footer__upper {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .footer__section {
     margin-top: 1rem;
+    margin: 2rem;
   }
 
   .footer__input{
     width: 50vw;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   #hamburger{
     display: flex;
-    height: 2rem;
     width: 2rem;
+    height: 2rem;
   }
 
   .navbar__upper__menubar{
@@ -1316,34 +1286,28 @@ hr{
     justify-content: space-between;
   }
 
-  .navbar__search__div{
+  .navbar__search__div {
     margin-top: 1rem;
   }
 
-  .card__section{
+  .card__section {
+    padding: 0.875rem 2rem;
+    gap:5px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
-    padding-top: 0.875rem;
-    padding-bottom: 0.875rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .image{
     width: 20rem;
   }
 
-  #main__section{
-    padding-top: 0.875rem;
-    padding-bottom: 0.875rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  #main__section {
+    padding: 0.875rem 2rem;
   }
 
-  #navbar__upper{
+  #navbar__upper {
+    padding: 2rem;
     margin: 0px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .navbar__search__div{
@@ -1352,26 +1316,24 @@ hr{
 
   #navbar__menu{
     position: relative;
+    width: 100vw;
+    height: 35vh;
     display: flex;
     display: none;
-    height: 35vh;
-    width: 100vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .navbar__menu__div{
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
+  .navbar__menu__div {
+    margin: 10px 0;
   }
 
-  .navbar__lower{
+  .navbar__lower {
+    padding: 2rem;
     display: block;
     height: -moz-fit-content;
     height: fit-content;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .navbar__lower__one{
@@ -1388,9 +1350,8 @@ hr{
     margin: 0px;
   }
 
-  .navbar__lower__p{
+  .navbar__lower__p {
     font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
@@ -1408,7 +1369,8 @@ hr{
     justify-content: space-between;
   }
 
-  .card__section{
+  .card__section {
+    gap:5px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
     padding-top: 0.875rem;
@@ -1418,7 +1380,7 @@ hr{
   }
 
   .image{
-    width: 16rem;
+    width: 25rem;
   }
 
   #navbar__search{
@@ -1431,19 +1393,19 @@ hr{
     width: 16rem;
   }
 
-  .card__section{
+  .card__section {
+    gap:5px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
   }
 
   .image{
-    width: 20rem;
+    width: 30rem;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   #navbar__search{
-    width:22rem;
+    width: 35rem;
   }
 }
-

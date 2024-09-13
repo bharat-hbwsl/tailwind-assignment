@@ -5,24 +5,17 @@
 @tailwind utilities;
 
 @layer utilities {
-    .w-19 {
-      width: 4.75rem;
+    .grid-template {
+        grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
     }
-    .w-88{
-        width:22rem;
-    }
-    .w-100{
-        width: 31rem;
-    }
-  }
-  
+}
 
 * {
     @apply m-0 p-0 font-sans box-border;
 }
 
 .a {
-    @apply flex items-center mr-4;
+    @apply flex items-center mr-[1rem];
 }
 
 #navbar {
@@ -38,71 +31,74 @@
 }
 
 #navbar__search {
-    @apply flex w-[46.9375rem] border-transparent p-3 items-start;
+    @apply flex w-[46.9375rem] border-transparent p-[0.75rem_1.5rem] items-start;
 }
 
 .navbar__search__icon__div {
-    @apply inline-flex p-2.5 items-start gap-2 border-transparent bg-[#FFF];
+    @apply inline-flex p-[0.72rem_1.5rem] items-start gap-[0.5rem] border-transparent bg-white;
 }
 
 #navbar__search__icon {
-    @apply fill-[#FFF] inline-flex items-start gap-2;
+    @apply fill-white inline-flex items-start gap-[0.5rem];
 }
 
 .navbar__menu__div {
-    @apply flex ml-12 items-center flex-col;
+    @apply flex ml-[3rem] items-center flex-col;
 }
 
 .navbar__menu__title {
-    @apply text-[#FFF] text-center text-xs font-medium leading-4 w-19 h-8 mt-1;
+    @apply text-center text-white text-[0.75rem] font-medium leading-[1rem] w-[4.75rem] h-[2rem] mt-[0.25rem];
+}
+.card__section__card{
+    position: relative;
 }
 
 .navbar__lower {
-    @apply flex justify-between p-5 h-16 bg-[#082032];
+    @apply flex justify-between p-[1.25rem_6rem] h-[4rem] bg-[#082032];
 }
 
 .two__item {
-    @apply flex flex-col w-[13.75rem] p-5 justify-center items-center border border-[#D4D4D8] bg-[#FFF];
+    @apply flex flex-col w-[13.75rem] p-[1.25rem_1.5rem_2.125rem_1.5rem] justify-center items-center border border-gray-300 bg-white;
 }
 
 .category {
-    @apply w-32 h-32 flex-shrink-0;
+    @apply w-[8.125rem] h-[8.125rem] flex-shrink-0;
 }
 
 .two__item__title {
-    @apply text-[#27272A] text-center mt-4 font-sans text-sm font-normal leading-5;
+    @apply text-center text-gray-800 mt-[1rem] text-[0.875rem] font-normal leading-[1.25rem];
 }
 
 #two {
-    @apply grid grid-cols-[repeat(auto-fit,minmax(13.75rem,1fr))] gap-10 mt-6;
+    @apply grid grid-template gap-[2.5rem] mt-[1.5rem];
 }
 
 #main__section {
-    @apply p-5;
+    @apply p-[1.25rem_6rem];
 }
 
 #footer {
-    @apply flex flex-wrap flex-col h-[22.5rem] flex-shrink-0 bg-[#F4F4F5];
+    @apply flex flex-wrap flex-col h-[22.5rem] flex-shrink-0 bg-gray-100;
 }
 
 .footer__upper {
-    @apply flex mt-16 justify-around;
+    @apply flex mt-[4rem] justify-around;
 }
 
 .footer__upper__title {
-    @apply text-[#3F3F46] font-sans text-sm font-semibold leading-5;
+    @apply text-gray-700 text-[0.875rem] font-semibold leading-[1.25rem];
 }
 
 .footer__list__item {
-    @apply text-[#52525B] font-sans text-sm font-normal leading-5;
+    @apply text-gray-600 text-[0.875rem] font-normal leading-[1.25rem];
 }
 
 .footer__list {
-    @apply mt-4;
+    @apply mt-[1rem];
 }
 
 .navbar__list__contact {
-    @apply flex ml-8;
+    @apply flex ml-[2rem];
 }
 
 .footer__list__contact {
@@ -110,7 +106,7 @@
 }
 
 .footer__list__number {
-    @apply text-[#52525B] font-sans text-sm font-semibold leading-5;
+    @apply text-gray-600 text-[0.875rem] font-semibold leading-[1.25rem];
 }
 
 ul > li {
@@ -118,39 +114,39 @@ ul > li {
 }
 
 .footer__socials {
-    @apply flex mt-4 gap-4;
+    @apply flex mt-[1rem] gap-[1rem];
 }
 
 .footer__copyright {
-    @apply relative top-2 text-[#71717A] text-center p-8 font-sans text-xs font-normal leading-4;
+    @apply relative top-[0.5rem] text-gray-500 text-center p-[2rem] text-[0.75rem] font-normal leading-[1rem];
 }
 
 hr {
-    @apply mx-auto w-[90%] h-0.5 bg-[#E4E4E7];
+    @apply m-auto w-[90%] h-[0.0625rem];
+    background: #e4e4e7;
+    border-width:1px;
+    border-style: inset;
 }
 
 .footer__subscribe {
-    @apply border-none inline-flex p-3 justify-center items-center bg-[#196195] text-[#FFF] mt-6 font-sans text-sm font-semibold leading-5;
+    @apply inline-flex p-[0.75rem_1.25rem] justify-center items-center bg-[#196195] text-white mt-[1.62rem] text-[0.875rem] font-semibold leading-[1.25rem];
 }
 
 #navbar__upper {
-    @apply flex flex-wrap p-5 justify-between items-center;
+    @apply flex flex-wrap p-[1.25rem_6rem] justify-between items-center;
 }
 
 .navbar__lower__p {
-    @apply text-[#FFF] font-sans text-base font-normal leading-6 ml-2;
+    font-family: Inter;
+    @apply text-white text-[1rem] font-normal leading-[1.5rem] ml-[0.5rem];
 }
 
-.navbar__lower__one {
-    @apply flex;
-}
-
-.navbar__lower__two {
+.navbar__lower__one, .navbar__lower__two {
     @apply flex;
 }
 
 .footer__input {
-    @apply flex w-[20.5625rem] h-[2.75rem] p-3.5 items-center flex-shrink-0 border border-[#7FC7FB] bg-[#FFF];
+    @apply flex w-[20.5625rem] h-[2.75rem] p-[0.75rem_11.1875rem_0.75rem_1rem] items-center flex-shrink-0 border border-blue-300 bg-white;
 }
 
 #one {
@@ -162,102 +158,93 @@ hr {
 }
 
 .one__title {
-    @apply text-[#27272A] font-sans text-xl font-semibold leading-7;
+    @apply text-gray-800 text-[1.25rem] font-semibold leading-[1.75rem];
+}
+#hamburger{
+    display: none;
 }
 
 .one__view {
-    @apply text-[#196195] font-sans font-bold mr-2 leading-5;
+    font-family: Inter;
+    font-size:large;
+    font-style: normal;
+    @apply text-[#196195] font-bold mr-[0.5rem] leading-[1.25rem];
 }
-
 
 .main__one {
-    @apply flex justify-between py-3 px-24;
+    @apply flex justify-between p-[0.875rem_6rem];
 }
 
-.main__item__img {
-    @apply relative;
-}
-
-#hamburger {
-    @apply hidden;
+.main__item__img, .main__item__heading, .main__item__p, .main__item__arrow, .main__item__view {
+    @apply relative top-[-8.25rem] ml-[1rem] text-white;
 }
 
 .main__item__heading {
-    @apply relative top-[-8.25rem] ml-4 text-white text-2xl font-bold leading-7;
+    @apply text-[1.25rem] font-bold leading-[1.75rem];
 }
 
-.main__item__p {
-    @apply relative top-[-8.25rem] ml-4 text-white text-sm font-normal leading-5;
-}
-
-.main__item__arrow {
-    @apply relative top-[-8.25rem] ml-4 text-white text-sm font-normal leading-5;
-}
-
-.main__item__view {
-    @apply relative top-[-6rem] ml-4 text-white text-sm font-normal leading-5;
+.main__item__p, .main__item__arrow, .main__item__view {
+    @apply text-[0.875rem] font-normal leading-[1.25rem];
 }
 
 .card__section {
-    @apply relative py-3 px-24 flex justify-between;
+    @apply relative p-[0.875rem_6rem] flex justify-between;
 }
 
 .image {
-    @apply w-100 h-64;
-}
-
-.card__section__card {
-    @apply relative;
+    @apply w-[31rem] h-[15.5625rem];
 }
 
 .heading {
-    @apply absolute top-32 text-white text-2xl font-bold leading-7 pl-4;
+    font-family: Inter;
+    @apply absolute top-[8.25rem] text-white text-[1.25rem] font-bold leading-[1.75rem] pl-[1rem];
 }
 
 .text {
-    @apply absolute top-40 text-white text-sm leading-5 w-3/5 pl-4;
+    font-family: Inter;
+    @apply absolute top-[10.25rem] text-white w-[60%] text-[0.875rem] font-normal leading-[1.25rem] pl-[1rem];
 }
 
 .btn {
-    @apply flex absolute bottom-4 pl-4 text-white text-xs font-semibold leading-4;
+    @apply flex absolute bottom-[1rem] pl-[1rem] text-white text-[0.75rem] font-semibold leading-[1rem];
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
     #navbar__upper {
-        @apply py-3 px-4;
+        @apply p-[1.25rem];
     }
 
     #footer {
-        @apply block h-56;
+        @apply block h-[22.5rem];
     }
 
     .footer__upper {
-        @apply py-8 flex-wrap block;
+        @apply p-[2rem] flex-wrap block;
     }
 
     .footer__section {
-        @apply mt-4 mx-8;
+        @apply mt-[1rem] m-[2rem];
     }
 
     .footer__input {
-        @apply w-[70vw] py-2;
+        @apply w-[70vw] p-2;
     }
 
     .navbar__search__div {
-        @apply hidden w-20;
+        @apply hidden w-[5rem];
     }
 
     .navbar__menu__div {
-        @apply ml-0 w-full flex-row mx-4 items-center justify-center;
+        @apply ml-0;
     }
 
     #navbar__search {
-        @apply w-20;
+        @apply w-[5rem];
     }
 
     .main__one {
-        @apply mt-4 block p-0;
+        @apply mt-[1rem] block p-0;
     }
 
     .main__item__img {
@@ -268,16 +255,20 @@ hr {
         @apply relative w-screen h-[30vh] flex flex-col justify-center items-center hidden;
     }
 
+    .navbar__menu__div {
+        @apply w-full flex flex-row m-[15px] items-center justify-center;
+    }
+
     .navbar__menu__title {
-        @apply ml-2;
+        @apply ml-[10px];
     }
 
     .navbar__lower {
-        @apply block py-8;
+        @apply block p-[2rem];
     }
 
     #hamburger {
-        @apply flex w-8 h-8;
+        @apply flex w-[2rem] h-[2rem];
     }
 
     .navbar__upper__menubar {
@@ -285,7 +276,7 @@ hr {
     }
 
     #main__section {
-        @apply py-8;
+        @apply p-[2rem];
     }
 
     #two {
@@ -293,7 +284,7 @@ hr {
     }
 
     .navbar__lower {
-        @apply block py-8 h-20;
+        @apply block p-[2rem] h-[5rem];
     }
 
     #footer {
@@ -301,11 +292,12 @@ hr {
     }
 
     .one__title {
-        @apply text-sm;
+        @apply text-[0.8rem];
     }
 
     .one__view {
-        @apply text-sm;
+        font-family: Inter;
+        @apply text-[0.8rem];
     }
 
     .navbar__lower__one {
@@ -313,7 +305,7 @@ hr {
     }
 
     .navbar__lower__two {
-        @apply mt-2 w-full flex justify-between;
+        @apply mt-[0.5rem] w-full flex justify-between;
     }
 
     .navbar__lower {
@@ -321,7 +313,7 @@ hr {
     }
 
     .navbar__lower__p {
-        @apply text-xs;
+        @apply text-[0.7rem];
     }
 
     .navbar__list__contact {
@@ -329,15 +321,19 @@ hr {
     }
 
     .one__view {
+        font-family: Inter;
         @apply m-0;
     }
 
     .footer__section {
         @apply p-0;
     }
+    .card__section__card{
+        margin-bottom: 3px;
 
+    }
     .card__section {
-        @apply py-8 block;
+        @apply p-[2rem] block;
     }
 
     .image {
@@ -345,17 +341,31 @@ hr {
     }
 
     .heading {
-        @apply text-base;
+        font-family: Inter;
+        @apply text-[1rem];
     }
 
     .text {
-        @apply text-xs w-[60vw];
+        @apply text-[0.65rem] w-[60vw];
     }
 }
 
+
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     #hamburger {
-        @apply flex w-8 h-8;
+        @apply flex;
+        width: 2rem;
+        height: 2rem;
+    }
+    .navbar__search__div{
+        @apply flex w-full;
+    }
+
+    #navbar__search{
+        @apply: flex-grow md:w-3/4 lg:w-1/2
+    }
+    .navbar__search__icon__div{
+        flex:none;
     }
 
     .navbar__upper__menubar {
@@ -363,7 +373,7 @@ hr {
     }
 
     .navbar__search__div {
-        @apply mt-4;
+        margin-top: 1rem;
     }
 
     #footer {
@@ -371,15 +381,18 @@ hr {
     }
 
     .footer__upper {
-        @apply py-8 flex-wrap;
+        padding: 2rem;
+        @apply flex-wrap;
     }
 
     .footer__section {
-        @apply mt-4 mx-4;
+        margin-top: 1rem;
+        margin: 1rem;
     }
 
     #navbar__upper {
-        @apply py-8 m-0;
+        padding: 2rem;
+        @apply m-0;
     }
 
     .navbar__search__div {
@@ -387,11 +400,14 @@ hr {
     }
 
     #navbar__menu {
-        @apply relative w-screen h-[40vh] flex flex-col justify-center items-center hidden;
+        @apply relative w-screen;
+        height: 40vh;
+        @apply flex flex-col justify-center items-center hidden;
     }
 
     .navbar__lower {
-        @apply py-8 h-fit block;
+        padding: 2rem;
+        @apply h-fit block;
     }
 
     .navbar__lower__one {
@@ -407,19 +423,21 @@ hr {
     }
 
     .navbar__menu__div {
-        @apply my-4;
+        margin: 15px 0;
     }
 
     .navbar__lower__p {
-        @apply text-base;
+        font-size: 1rem;
     }
 
     .card__section {
-        @apply py-8 flex flex-col justify-center items-center;
+        padding: 2rem;
+        gap:5px;
+        @apply flex flex-col justify-center items-center;
     }
 
     #main__section {
-        @apply py-5 px-14;
+        padding: 1.25rem 3.5rem;
     }
 
     .image {
@@ -427,11 +445,13 @@ hr {
     }
 
     .heading {
-        @apply text-xl;
+        font-family: Inter;
+        font-size: 1.3rem;
     }
 
     .text {
-        @apply text-sm w-[60vw];
+        font-size: 0.8rem;
+        @apply w-[60vw];
     }
 
     #two {
@@ -443,21 +463,35 @@ hr {
     #footer {
         @apply block h-auto;
     }
+    .navbar__search__div{
+        @apply flex w-full;
+    }
+
+    #navbar__search{
+        @apply: flex-grow md:w-3/4 lg:w-1/2
+    }
+    .navbar__search__icon__div{
+        flex:none;
+    }
 
     .footer__upper {
-        @apply py-8 grid grid-cols-3;
+        padding: 2rem;
+        @apply grid grid-cols-3;
     }
 
     .footer__section {
-        @apply mt-4 mx-8;
+        margin-top: 1rem;
+        margin: 2rem;
     }
 
     .footer__input {
-        @apply w-[50vw] py-2;
+        @apply w-[50vw] py-[8px];
     }
 
     #hamburger {
-        @apply flex w-8 h-8;
+        @apply flex;
+        width: 2rem;
+        height: 2rem;
     }
 
     .navbar__upper__menubar {
@@ -465,11 +499,13 @@ hr {
     }
 
     .navbar__search__div {
-        @apply mt-4;
+        margin-top: 1rem;
     }
 
     .card__section {
-        @apply grid py-3.5 px-8 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))];
+        padding: 0.875rem 2rem;
+        gap:5px;
+        @apply grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))];
     }
 
     .image {
@@ -477,11 +513,12 @@ hr {
     }
 
     #main__section {
-        @apply py-3.5 px-8;
+        padding: 0.875rem 2rem;
     }
 
     #navbar__upper {
-        @apply py-8 m-0;
+        padding: 2rem;
+        @apply m-0;
     }
 
     .navbar__search__div {
@@ -489,15 +526,18 @@ hr {
     }
 
     #navbar__menu {
-        @apply relative w-screen h-[35vh] flex flex-col justify-center items-center hidden;
+        @apply relative w-screen;
+        height: 35vh;
+        @apply flex flex-col justify-center items-center hidden;
     }
 
     .navbar__menu__div {
-        @apply my-2.5;
+        margin: 10px 0;
     }
 
     .navbar__lower {
-        @apply py-8 h-fit block;
+        padding: 2rem;
+        @apply h-fit block;
     }
 
     .navbar__lower__one {
@@ -513,9 +553,10 @@ hr {
     }
 
     .navbar__lower__p {
-        @apply text-base;
+        font-size: 1rem;
     }
 }
+
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     #navbar__upper {
@@ -527,35 +568,36 @@ hr {
     }
 
     .card__section {
+        gap:5px;
         @apply py-3.5 px-8 grid grid-cols-[repeat(auto-fit,minmax(25rem,1fr))];
     }
 
     .image {
-        @apply w-64;
+        @apply w-[25rem];
     }
 
     #navbar__search {
-        @apply w-56;
+        @apply w-[14rem];
     }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     #navbar__search {
-        @apply w-64;
+        @apply w-[16rem];
     }
 
     .card__section {
+        gap:5px;
         @apply grid grid-cols-[repeat(auto-fit,minmax(25rem,1fr))];
     }
 
     .image {
-        @apply w-80;
+        @apply w-[30rem];
     }
 }
 
 @media only screen and (min-width: 1400px) {
     #navbar__search {
-        @apply w-88;
+        @apply w-[35rem];
     }
 }
-
